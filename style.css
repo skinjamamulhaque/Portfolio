@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 html,body{
@@ -21,15 +22,25 @@ html,body{
     position: relative;
 }
 
-.logo img{
-    margin-left: 100px;
-    /* border: 1px solid red;  */
-    height: 60px;
-    width: auto;
-}
+.section_container{
+    width: 85%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;  
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    /* border: 1px solid red */
+    /* 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 
-.logoname{
-    margin-top: -20px;
+    /* background-color: black; */
+}
+.logo{
+    color: white;
 }
 
 a{
@@ -85,26 +96,14 @@ a{
     position: relative;
 }
 
-.section_container{
-    width: 85%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center; 
-    justify-content: space-around; 
-    background-color: black;
-    /* border: 1px solid red; */
-}
+
 
 .section1_img{
     height: 100%;
     /* border: 1px solid red; */
     width: 50%;
     overflow: hidden;
-    bottom: 10px;
+    /* bottom: 10px; */
     
 }
 
@@ -112,6 +111,8 @@ a{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    /* bottom: 10px; */
+    /* border: 3px solid red; */
 }
 
 .Container_content{
@@ -129,16 +130,18 @@ a{
     left: 50%;
     transform: translate(-50%,-50%);
     color: whitesmoke;
+    /* background-color: white; */
 }
 
-.content_details > p, button {
+/* .content_details > p, button {
     margin-bottom: 30px;
     margin-top: 30px;
-}
+} */
 
 .content_details > p{
     font-size: 15px;
     font-weight: 500;
+    margin-bottom: 30px;
 }
 
 .content_details > h2 {
@@ -146,10 +149,10 @@ a{
     letter-spacing: 1rem;
 }
 
-.content_details > h3{
+/* .content_details > h3{
     font-size: 2rem;
     font-weight: 800;
-}
+} */
 
 button{
     padding: 10px 30px;
@@ -163,37 +166,88 @@ button{
     height: 400px;
     width: 100%;
     background-color: whitesmoke;
-    position: relative;
+    /* position: relative; */
 }
 
-h3{
+.section2_container{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_container{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+}
+
+.left_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left_content > h3{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    /* border: ; */
+}
+/* h3{
     font-size: 20px;
     letter-spacing: .3rem;
     font-weight: 500;
     color: whitesmoke;
-}
+} */
 
 .right_container{
-    width:60%;
+    width:70%;
     height: 100%;    
+    background-color: black;
 }
 
 .card_container{
     height: 100%;
-    width: 100%;
-    display: flex;
+    width: 80%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    /* display: flex;
     justify-content: space-around;
-    align-items: end;
-    flex-wrap: wrap;
-    padding: 20px 20px 0px 0px ;
-    overflow: hidden;
+    align-items:center;
+    flex-wrap: wrap; */
+    /* padding: 20px 20px 0px 0px ; */
+    /* grid-template-columns: 100px 200px auto; */
+
+    /* overflow: hidden; */
 }
 
 .card{
-    height: 170px;
-    width: 185px;
+    height: 200px;
+    width: 200px;
     background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* display: flex;
+    justify-content: space-around;
+    align-items:center; */
 }
+
+
 
 .card_img{
     width: 100%;
@@ -417,4 +471,157 @@ input{
     border: none;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+
+
+/* CSS media Quary */
+
+
+@media (max-device-width: 1080px) {
+
+    .section_1{
+        max-width: 100%;
+    }
+
+    .section_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        /* border: 3px solid red; */
+
+    }
+
+    .section1_img{
+        height: 100%;
+        /* border: 1px solid red; */
+        width: 100%;
+        overflow: hidden;   
+        position: relative;     
+    }
+
+    .Container_content{
+        height: 100%;
+        /* border: 1px solid green; */
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .content_details{
+        width: 100%;
+        height: 100%;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        color: whitesmoke;
+        /* background-color: red; */
+    }
+    
+    .content_details > h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 1000;
+        letter-spacing: 1rem;
+    }
+
+    .content_details > p {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 15px;
+        margin-top: 10px;
+        /* font-weight: 1000; */
+        /* letter-spacing: 1rem; */
+    }
+    .section_2{
+        height: 100vh;
+        width: 100%;
+        /* background-color: whitesmoke; */
+        position: relative;
+    }
+
+    .section2_container{
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        /* position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column; */
+    }
+
+    .left_container{
+        width: 100%;
+        height: 15%;
+        background-color: whitesmoke;
+        color: black;
+        /* position: relative; */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        
+    }
+
+    .left_content{
+        width: 100%;
+        /* height: 100%;  */
+        /* border: 3px solid red; */
+        /* position: relative; */
+        text-align: center;
+       
+    }
+
+    .left_content > h3{
+        /* white-space: nowrap; */
+        font-size: 1.5rem;
+        font-weight: 800;
+        /* letter-spacing: 1rem; */
+        /* border: ; */
+    }
+
+    .right_container{
+        width:100%;
+        /* height: 100%;     */
+        background-color: black;
+    }
+
+    .card_container{
+        height: 100%;
+        width: 100%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding:10px 10px;
+        gap: 5px ;
+        /* display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-wrap: wrap; */
+        /* grid-template-columns: 100px 200px auto; */
+    
+        /* overflow: hidden; */
+    }
+
+    
+    .card{
+        height: 200px;
+        width: 180px;
+        background-color: white;
+        border-radius: 10px;
+        object-fit: cover;
+        /* display: flex;
+        justify-content: space-around;
+        align-items:center; */
+    }
+
+
+    
+
+    
 }
