@@ -11,6 +11,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    position: relative;
     /* background-color: aqua; */
     /* overflow: hidden; */
 }
@@ -166,6 +167,8 @@ button{
     height: 400px;
     width: 100%;
     background-color: whitesmoke;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
     /* position: relative; */
 }
 
@@ -225,14 +228,8 @@ button{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    /* display: flex;
-    justify-content: space-around;
-    align-items:center;
-    flex-wrap: wrap; */
-    /* padding: 20px 20px 0px 0px ; */
-    /* grid-template-columns: 100px 200px auto; */
+    padding-top: 6px;
 
-    /* overflow: hidden; */
 }
 
 .card{
@@ -242,9 +239,6 @@ button{
     padding: 10px;
     border-radius: 10px;
     object-fit: cover;
-    /* display: flex;
-    justify-content: space-around;
-    align-items:center; */
 }
 
 
@@ -256,25 +250,21 @@ button{
 }
 
 .section_3{
-    height:600px;
+    height:100vh;
     width: 100%;
-    border-top: 2px solid whitesmoke;
     background-color: black;
-    position: relative;
+    /* position: relative; */
 }
 
 .section3_container{
     width: 100%;
     height: 100%;
-    /* border: 2px solid red; */
-    position: relative;
+    /* position: relative; */
 }
 
 .content_box {
     width: 100%;
-    /* height:calc(600px - 50px) ; */
     color: white;
-    /* margin-top: 1rem; */
     text-align: center;
 }
 
@@ -288,13 +278,13 @@ button{
 
 .img_container{
     width: 100%;
-    background-color: greenyellow;
-    /* position: relative;  */
+    /* background-color: greenyellow; */
+    position: relative; 
 }  
 
-/*
+
 .img_card{
-   background-color: blue;
+   /* background-color: blue; */
    display: flex;
    justify-content: space-evenly;
    align-items: center;
@@ -306,7 +296,7 @@ button{
     height: 480px;
     width: 270px;
     margin-top: 10px;
-    background-color: blue; 
+    /* background-color: blue;  */
    border: none;
     border-radius: 4px;
 }
@@ -316,43 +306,56 @@ button{
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
-} */
+}
 
 .section_4{
+    border-top:1px solid whitesmoke;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+/* .section_4{
     height: 150px;
     width: 100%;
-    /* background-color: red; */
+    background-color: red;
     position: relative;
     background-image:url(./footerimg.webp) ;
     background-position: center;
     background-size: cover;
-}
+} */
 
-.bgimg_container{
+/* .bgimg_container{
     height: calc(150px - 10px);
     width: 60%;
-    /* background-color: blue; */
+    background-color: blue;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
-.footer_logo{
+/* .footer_logo{
     height: 50%;
     width: 100%;
-    /* background-color: brown; */
+    background-color: brown;
     background-image: url(./logo5.webp);
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .hyperlink{
     height: 50%;
     width: 100%;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -404,10 +407,6 @@ button{
     text-align: center;
     color: black;
     padding: 30px ;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
 }
 
 .goal > p{
@@ -498,7 +497,7 @@ input{
 /* CSS media Quary */
 
 
-@media (max-device-width: 1080px) {
+@media screen and (min-width: 350px) and (max-width: 1199px) {
 
     .section_1{
         max-width: 100%;
@@ -532,10 +531,6 @@ input{
     .content_details{
         width: 100%;
         height: 100%;
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%); */
         color: whitesmoke;
         /* background-color: red; */
     }
@@ -552,8 +547,7 @@ input{
         text-align: center;
         padding: 15px;
         margin-top: 10px;
-        /* font-weight: 1000; */
-        /* letter-spacing: 1rem; */
+
     }
     .section_2{
         height: 100vh;
@@ -565,14 +559,10 @@ input{
     .section2_container{
         width: 100%;
         height: 100%;
-        background-color: red;
+        /* background-color: red; */
         display: flex;
         flex-direction: column;
-        /* position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column; */
+
     }
 
     .left_container{
@@ -580,18 +570,12 @@ input{
         height: 15%;
         background-color: whitesmoke;
         color: black;
-        /* position: relative; */
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
+
         
     }
 
     .left_content{
         width: 100%;
-        /* height: 100%;  */
-        /* border: 3px solid red; */
-        /* position: relative; */
         text-align: center;
        
     }
@@ -600,8 +584,6 @@ input{
         /* white-space: nowrap; */
         font-size: 1.5rem;
         font-weight: 800;
-        /* letter-spacing: 1rem; */
-        /* border: ; */
     }
 
     .right_container{
@@ -619,13 +601,7 @@ input{
         grid-template-rows: repeat(3, 1fr);
         padding:10px 10px;
         gap: 5px ;
-        /* display: flex;
-        justify-content: space-around;
-        align-items:center;
-        flex-wrap: wrap; */
-        /* grid-template-columns: 100px 200px auto; */
-    
-        /* overflow: hidden; */
+
     }
 
     
@@ -635,16 +611,13 @@ input{
         background-color: white;
         border-radius: 10px;
         object-fit: cover;
-        /* display: flex;
-        justify-content: space-around;
-        align-items:center; */
     }
 
     .section_3{
         height:100% ;
         width: 100%;
         background-color: black;
-        position: relative;
+        /* position: relative; */
     }
 
     .content_box{
@@ -652,7 +625,7 @@ input{
         width: 100%;
         height: 100%;
         text-align: center;
-        padding: 20px 25px ;
+        /* padding: 10px 10px ; */
         /* color: white; */
     }
 
@@ -662,31 +635,41 @@ input{
         justify-content: space-evenly;
         align-items: center;
         position: relative;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         object-fit: cover;
+        padding: 10px;
     }
     
     
     .card1{
         height: 200px;
-        border: 2px solid white;
         width: 100%;
-        position: relative;
-        /* margin-top: 10px; */
-        /* background-color: blue;*/
-        /* border: none; */
+        /* position: relative; */
         border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .card1  img{
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
         height: 100%;
         width: 100%;
         object-fit: cover;
+    
     }
 
+    .section_4{
+        border-top:1px solid whitesmoke;
+        max-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+    }
+    
     
 }

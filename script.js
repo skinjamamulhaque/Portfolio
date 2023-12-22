@@ -1,4 +1,4 @@
-alert("This page is being developed by Sk Injamamul Haque, Best view on Desktop mode");
+// alert("This page is being developed by Sk Injamamul Haque, Best view on Desktop mode");
 
 function locoScrollTrigger(){
   gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +65,7 @@ locoScrollTrigger();
 
 
 
-gsap.from(".nav_list .nav_link , .logoimg ,.logoname",{
+gsap.from(".nav_list .nav_link , .logo",{
   y:-120,
   duration:1,
   delay:0.5,
@@ -101,7 +101,7 @@ gsap.from(".content_details h2, .about_para, .Readmore",{
  })
 
  gsap.from(".card_container .card",{
-  x:700,
+  x:1000,
   stagger:0.5,
   duration:1.5,
   scrollTrigger:{
