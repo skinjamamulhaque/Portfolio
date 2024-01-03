@@ -63,12 +63,34 @@ locoScrollTrigger();
 //   showCloseButton: true, 
 // });
 
+var tl = gsap.timeline()
+
+tl.from("#opener h3",{
+  x:30,
+  opacity:0,
+  stagger:0.4,
+  duration:1,
+})
+tl.to("#opener h3",{
+  opacity:0,
+  stagger:0.4,
+  duration:1,
+})
+
+tl.to("#opener",{
+  y:-200,
+  // duration:1,
+  opacity:0,
+})
+tl.to("#opener",{
+  display: "none"
+})
 
 
 gsap.from(".nav_list .nav_link , .logo",{
   y:-120,
   duration:1,
-  delay:0.5,
+  delay:1,
   stagger:0.2
 } )
 
@@ -102,8 +124,8 @@ gsap.from(".content_details h2, .about_para, .Readmore",{
 
  gsap.from(".card_container .card",{
   x:1000,
-  stagger:0.5,
-  duration:1.5,
+  stagger:0.3,
+  duration:0.8,
   scrollTrigger:{
     trigger:".card_container .card",
     scroller:"#main",
@@ -142,9 +164,10 @@ gsap.from(".content_details h2, .about_para, .Readmore",{
   scrollTrigger:{
     trigger:".card1 img",
     scroller:"#main",
-    // scrub:2,
+    scrub:2,
   }
 })
+
 
 
 

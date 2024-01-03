@@ -16,6 +16,25 @@ html,body{
     /* overflow: hidden; */
 }
 
+#opener{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    background-color: black;
+    top:0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#opener h3{
+    font-size: 2vw;
+    font-weight: 500;
+    text-transform: capitalize;
+}
 .navbar{
     height: 150px;
     width: 100%;
@@ -253,7 +272,7 @@ button{
     height:100vh;
     width: 100%;
     background-color: black;
-    /* position: relative; */
+    position: relative;
 }
 
 .section3_container{
@@ -277,6 +296,7 @@ button{
 
 
 .img_container{
+   
     width: 100%;
     /* background-color: greenyellow; */
     position: relative; 
@@ -297,7 +317,7 @@ button{
     width: 270px;
     margin-top: 10px;
     /* background-color: blue;  */
-   border: none;
+    border: none;
     border-radius: 4px;
 }
 
@@ -499,6 +519,12 @@ input{
 
 @media screen and (min-width: 350px) and (max-width: 1199px) {
 
+    #opener h3{
+        font-size: 4vw;
+        /* font-weight: 500;
+        text-transform: capitalize; */
+    }
+
     .section_1{
         max-width: 100%;
     }
@@ -617,7 +643,7 @@ input{
         height:100% ;
         width: 100%;
         background-color: black;
-        /* position: relative; */
+        position: relative;
     }
 
     .content_box{
@@ -625,38 +651,46 @@ input{
         width: 100%;
         height: 100%;
         text-align: center;
-        /* padding: 10px 10px ; */
+        padding: 10px 10px ;
         /* color: white; */
+    }
+
+    .img_container{
+         height: 100%;
+         /* background-color: red; */
     }
 
     .img_card{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: start; 
         align-items: center;
         position: relative;
-        /* margin-top: 30px; */
+        margin-top: 30px;
         object-fit: cover;
         padding: 10px;
     }
     
     
     .card1{
-        height: 200px;
-        width: 100%;
-        /* position: relative; */
+        /* width: 200px; */
+        /* aspect-ratio: 1 ; */
+        height: 200px; 
+         min-width: 100%;
+        position: relative;
         border-radius: 4px;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
     }
 
     .card1  img{
         height: 100%;
         width: 100%;
         object-fit: cover;
-    
+        object-position: top;
+        aspect-ratio: 1/.5; 
     }
 
     .section_4{
