@@ -846,6 +846,10 @@ video {
   .sm\:pr-32 {
     padding-right: 8rem;
   }
+
+  .sm\:pr-20 {
+    padding-right: 5rem;
+  }
 }
 
 @media (min-width: 768px) {
